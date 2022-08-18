@@ -3130,6 +3130,40 @@ hr {
 .header-blue {
     font-family:'Source Sans Pro', sans-serif;
 }
+.section {
+    margin-bottom: 20px;
+    word-wrap: break-word;
+    padding: 0.1px 0px;
+}
+.section_title-leaders {
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+.section_title {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0 0 15px;
+    overflow: hidden;
+    color: #fff;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.flex-items-center {
+    align-items: center;
+}
+.text-small, small {
+    font-size: 12px !important;
+}
+.d-flex {
+    display: flex;
+}
+.pv-1 {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+aside {
+    display: block;
+}
 .streamItem-answer {
     background-color: #fff;
     margin-bottom: 15px;
@@ -3294,8 +3328,46 @@ main {
 .position-relative {
     position: relative;
 }
-.main-column {
-    grid-area: content;
+.flex-items-center {
+    align-items: center;
+}
+.flex-row {
+    flex-direction: row;
+}
+.menuBar_item-profile .username {
+    margin-top: 3px;
+}
+.ph-2 {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+}
+.userAvatar{
+    box-shadow: 0px 0px 0px 1.5px #ee1144;
+}
+.username{
+    font-weight: bold;
+    margin: 0;
+    color: white;
+}
+.popover-menu.settings-menu {
+    right: 50px;
+}
+body, nav, footer, div, h1, h2, h3, h4, a, p, strong, span, img, input, button, textarea, select, ul, ol, li, table, tbody, tr, td {
+    border: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    -webkit-text-size-adjust: 100%;
+}
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+a {
+    color: #ee1144;
+    cursor: pointer;
 }
 .baseDark {
     --background: rgba(0, 0, 0, 0.5);
@@ -3395,6 +3467,31 @@ textarea {
     background: #ee1144;
     color: #fff;
 }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
 .btn {
     cursor: pointer;
     display: inline-block;
@@ -3414,6 +3511,11 @@ textarea {
 .optionsBar {
     line-height: 38px;
     color: var(--text-color);
+}
+@media (min-width: 840px) {
+    .popover-menu {
+        top: 47px;
+    }
 }
 @media (min-width: 840px) {
     .main-content {
