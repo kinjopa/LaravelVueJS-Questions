@@ -24,7 +24,8 @@
                             <div class="optionsBar-counter text-small"></div>
                             <button name="button" type="submit"
                                     class="btn btn-danger min-w-0 icon-send rsp-eql-desktop"
-                                    style="width: 100px">Отправить</button>
+                                    style="width: 100px">Отправить
+                            </button>
                         </div>
                         <div class="captcha-container " style="display:none"
                              data-url="https://ask.fm/account/shoutout/captcha"></div>
@@ -105,7 +106,8 @@
                             <div class="heartButton"><a class="icon-like" title="Like" data-action="AnswerLikeToggle"
                                                         data-url="https://ask.fm/Darksia_Sanilas/answers/152530926070/likes"
                                                         href="#"></a><a class="counter"
-                                                                        href="https://ask.fm/Darksia_Sanilas/answers/152530926070"><i class="fa fa-heart" style="color: red;margin-right: 5px"></i>11</a>
+                                                                        href="https://ask.fm/Darksia_Sanilas/answers/152530926070"><i
+                                        class="fa fa-heart" style="color: red;margin-right: 5px"></i>11</a>
                             </div>
                             <div class="rewardButton"><a class="icon-reward" title="Reward"
                                                          data-action="AnswerRewardToggle"
@@ -128,13 +130,63 @@
                                     data-params="{&quot;question[question_text]&quot;:&quot;\&quot;У вас нет сердца, а я чуть было не вручила вам своё\&quot;. Знаете, у меня была ситуация, когда меня любили чистым сердцем, а я при этом ничего не испытывала. Что вы делаете в таких ситуациях? Как лучше поступить? Уместно ли здесь \&quot;лучше остаться с тем, кто любит тебя, а не кого любишь ты \&quot;? Что думаешь?&quot;}"
                                     title="Forward the question" href="#"><span>Forward the question</span></a></nav>
 
-
                         </div>
-
-
                     </article>
                 </div>
             </div>
+            <aside class="aside-bottom">
+                <section class="section rsp-eql-desktop">
+                    <h3 class="section_title section_title-leaders pb-2 mb-1">🇷🇺 Leaderboard</h3>
+                    <a class="item text-small pv-1 d-flex justify-between flex-items-center mb-1" id=""
+                       href="https://ask.fm/id81297005">
+                        <div class="text-gray-600 align-center" style="width: 30px">1</div>
+                        <img loading="lazy" alt="id81297005’s Profile Photo" class="userAvatar"
+                             src="https://cuad.ask.fm/e7f/76e01/475b/4bcd/ac3c/2b977f6fa16b/thumb_big/17510.jpg"/>
+                        <div class="userItem_content flex-1 min-w-0 mr-2"><span
+                                class="userName text-white d-flex max-w-fit flex-items-center gap-1 ">Екатерина Чугуева</span><span
+                                dir="ltr" class="text-gray-600">@id81297005</span></div>
+                        <div class="strong text-white">+287&nbsp;990&nbsp;🔥</div>
+                    </a><a class="item text-small pv-1 d-flex justify-between flex-items-center mb-1" id=""
+                           href="https://ask.fm/aska705800">
+                        <div class="text-gray-600 align-center" style="width: 30px">2</div>
+                        <img loading="lazy" alt="aska705800’s Profile Photo" class="userAvatar"
+                             src="https://cuad.ask.fm/ad5/96202/4040/41f4/814d/fd9c4d312100/thumb_big/184041.jpg"/>
+                        <div class="userItem_content flex-1 min-w-0 mr-2"><span
+                                class="userName text-white d-flex max-w-fit flex-items-center gap-1 ">Call Me Angel</span><span
+                                dir="ltr" class="text-gray-600">@aska705800</span></div>
+                        <div class="strong text-white">+38&nbsp;203&nbsp;🔥</div>
+                    </a><a class="item text-small pv-1 d-flex justify-between flex-items-center mb-1" id=""
+                           href="https://ask.fm/minik_5050">
+                        <div class="text-gray-600 align-center" style="width: 30px">3</div>
+                        <img loading="lazy" alt="minik_5050’s Profile Photo" class="userAvatar"
+                             src="https://cuad.ask.fm/39b/9c120/a068/42cd/a00c/8206ce84ea9c/thumb_big/74910.jpg"/>
+                        <div class="userItem_content flex-1 min-w-0 mr-2"><span
+                                class="userName text-white d-flex max-w-fit flex-items-center gap-1  userVerified">⋆*✮.М❀ℕi̾kA.✮*⋆</span><span
+                                dir="ltr" class="text-gray-600">@minik_5050</span></div>
+                        <div class="strong text-white">+35&nbsp;290&nbsp;🔥</div>
+                    </a><a class="item text-small pv-1 d-flex justify-between flex-items-center mb-1" id=""
+                           href="https://ask.fm/ognevstepan">
+                        <div class="text-gray-600 align-center" style="width: 30px">4</div>
+                        <img loading="lazy" alt="ognevstepan’s Profile Photo" class="userAvatar"
+                             src="https://cuad.ask.fm/477/fdc20/f105/4493/94e2/4607a99e382b/thumb_big/245154.jpg"/>
+                        <div class="userItem_content flex-1 min-w-0 mr-2"><span
+                                class="userName text-white d-flex max-w-fit flex-items-center gap-1 ">ваш вишнёвый друг ❣</span><span
+                                dir="ltr" class="text-gray-600">@ognevstepan</span></div>
+                        <div class="strong text-white">+33&nbsp;665&nbsp;🔥</div>
+                    </a><a class="item text-small pv-1 d-flex justify-between flex-items-center mb-1" id=""
+                           href="https://ask.fm/kali_ka_talina">
+                        <div class="text-gray-600 align-center" style="width: 30px">5</div>
+                        <img loading="lazy" alt="kali_ka_talina’s Profile Photo" class="userAvatar"
+                             src="https://cuad.ask.fm/1ba/c5e90/a6f1/4d12/84cf/3146d2595a46/thumb_big/239277.jpg"/>
+                        <div class="userItem_content flex-1 min-w-0 mr-2"><span
+                                class="userName text-white d-flex max-w-fit flex-items-center gap-1  userVerified">⠀༺ Ｋａ♱ａｌｉｎａ ༻⠀</span><span
+                                dir="ltr" class="text-gray-600">@kali_ka_talina</span></div>
+                        <div class="strong text-white">+30&nbsp;770&nbsp;🔥</div>
+                    </a>
+                    <p><a class="more" href="https://ask.fm/account/leaders/country?auto_scroll=%23currentUserItem">See
+                            all</a></p>
+                </section>
+            </aside>
         </main>
     </main>
 @endsection
