@@ -15,6 +15,8 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -27,4 +29,6 @@
     </main>
 </div>
 </body>
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
 </html>
