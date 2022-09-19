@@ -7,30 +7,7 @@
                     <header class="p-4 pb-3">
                         <div class="text-medium strong break-words lh-spacy">👋Задать вопрос</div>
                     </header>
-                    <form id="wallIndexForm" class="askForm" autocomplete="off" data-action="FormXHRSubmit"
-                          action="https://ask.fm/account/shoutout" accept-charset="UTF-8" method="post"><input
-                            name="utf8" type="hidden" value="&#x2713;"/><input type="hidden" name="authenticity_token"
-                                                                               value="oXjRZe7PQfKnv7VMyTeoxtmdjmGRPsRq4mW/Jvm9OmxOJe5QjkbgfCpsCW7FYPp7hok9iwL6JMmyIzqUoCt2+A=="/>
-
-                        <div class="textBlock bg-white p-2 position-relative mh-4 rounded-small mt-4 lg:mt-0">
-    <textarea placeholder="Задать вопрос всем пользователям.." data-counter=".optionsBar-counter" data-limit="300"
-              style="min-height:60px;height:20px" data-atcomplete="https://ask.fm/account/friends/autocomplete"
-              name="question[question_text]" id="question_question_text">
-                    </textarea>
-                        </div>
-                        <div class="optionsBar d-flex p-4 gap-1 md:gap-4 flex-items-center justify-between">
-                            <div class="flex-1"><input name="question[question_type]" type="hidden" value="shoutout"/>
-                                <label for="shoutout_question_anonymous"></label></div>
-                            <div class="optionsBar-counter text-small"></div>
-                            <button name="button" type="submit"
-                                    class="btn btn-danger min-w-0 icon-send rsp-eql-desktop"
-                                    style="width: 100px">Отправить
-                            </button>
-                        </div>
-                        <div class="captcha-container " style="display:none"
-                             data-url="https://ask.fm/account/shoutout/captcha"></div>
-
-                    </form>
+                 <example-component :id_user="{{Auth::user()->id}}"></example-component>
                 </section>
 
                 <div class="item-page">

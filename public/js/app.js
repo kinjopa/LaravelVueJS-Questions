@@ -1909,8 +1909,33 @@ module.exports = {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  mounted: function mounted() {
-    console.log('Component mounted.');
+  name: 'QuestComponent',
+  props: ['id_user'],
+  data: function data() {
+    return {
+      isElVisible: false,
+      title: null
+    };
+  },
+  methods: {
+    multiplyActions: function multiplyActions() {
+      this.toggleElement();
+      this.addQuest();
+    },
+    toggleElement: function toggleElement() {
+      this.isElVisible = true;
+    },
+    addQuest: function addQuest() {
+      var _this = this;
+
+      axios.post('/send_quest', {
+        user_id: this.id_user,
+        title: this.title
+      }).then(function (res) {
+        _this.title = "";
+        _this.isElVisible = false;
+      });
+    }
   }
 });
 
@@ -1931,7 +1956,62 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _vm._m(0);
+  return _c("form", {
+    staticClass: "askForm",
+    attrs: {
+      id: "wallIndexForm",
+      method: "post"
+    }
+  }, [_c("div", {
+    staticClass: "textBlock bg-white p-2 position-relative mh-4 rounded-small mt-4 lg:mt-0"
+  }, [_c("textarea", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.title,
+      expression: "title"
+    }],
+    staticStyle: {
+      "min-height": "60px",
+      height: "20px"
+    },
+    attrs: {
+      placeholder: "Задать вопрос всем пользователям..",
+      "data-limit": "300",
+      name: "question",
+      id: "question_question_text"
+    },
+    domProps: {
+      value: _vm.title
+    },
+    on: {
+      input: function input($event) {
+        if ($event.target.composing) return;
+        _vm.title = $event.target.value;
+      }
+    }
+  })]), _vm._v(" "), _c("div", {
+    staticClass: "optionsBar d-flex p-4 gap-1 md:gap-4 flex-items-center justify-between"
+  }, [_vm._m(0), _vm._v(" "), _c("div", {
+    staticClass: "optionsBar-counter text-small"
+  }), _vm._v(" "), _vm.isElVisible ? _c("div", {
+    staticClass: "lds-dual-ring"
+  }) : _vm._e(), _vm._v(" "), _c("button", {
+    staticClass: "btn btn-danger min-w-0 icon-send rsp-eql-desktop",
+    staticStyle: {
+      width: "100px"
+    },
+    attrs: {
+      name: "button",
+      type: "submit"
+    },
+    on: {
+      click: function click($event) {
+        $event.preventDefault();
+        return _vm.multiplyActions();
+      }
+    }
+  }, [_vm._v("Отправить\n        ")])])]);
 };
 
 var staticRenderFns = [function () {
@@ -1939,18 +2019,12 @@ var staticRenderFns = [function () {
       _c = _vm._self._c;
 
   return _c("div", {
-    staticClass: "container"
-  }, [_c("div", {
-    staticClass: "row justify-content-center"
-  }, [_c("div", {
-    staticClass: "col-md-8"
-  }, [_c("div", {
-    staticClass: "card"
-  }, [_c("div", {
-    staticClass: "card-header"
-  }, [_vm._v("Example Component")]), _vm._v("\n111111111111111111111111111\n                    "), _c("div", {
-    staticClass: "card-body"
-  }, [_vm._v("\n                        I'm an example component.\n                    ")])])])])]);
+    staticClass: "flex-1"
+  }, [_c("label", {
+    attrs: {
+      "for": "shoutout_question_anonymous"
+    }
+  })]);
 }];
 render._withStripped = true;
 
