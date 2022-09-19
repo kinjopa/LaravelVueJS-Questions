@@ -6,8 +6,8 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <link rel="shortcut icon" href="{{ asset('img/ico.jpg') }}" type="image/x-icon">
+    <title>Вопросы</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -20,6 +20,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
 </head>
 <body>
 <div id="app">
@@ -30,5 +31,5 @@
 </div>
 </body>
 <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
-<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
+
 </html>

@@ -17,3 +17,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'WelcomController@index')->name('welcom');
+
+
+Route::post('/send_quest', 'QuestController@index');
